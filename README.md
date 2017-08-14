@@ -96,5 +96,13 @@ console.log(chislogon.currency('5665485.23', {off_base: true, off_part: true}))
 console.log(chislogon.currency('2000252000.998', {currency: "CNY"}))
 => "два миллиарда двести пятьдесят две тысячи один юань"
 
+console.log(chislogon.currency('0.82'))
+=> "восемьдесят две копейки"
+
+console.log(chislogon.currency('0.82', {zero_base:true}))
+=> "ноль рублей восемьдесят две копейки"
+
+console.log(chislogon.currency('236', {zero_part:"ровно"}))
+=> "двести тридцать шесть рублей ровно"
 
 ```
