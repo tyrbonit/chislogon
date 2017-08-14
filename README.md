@@ -111,7 +111,10 @@ console.log(chislogon.currency('2568.56', {currency:'USD', zero_part:"ровно
 console.log(chislogon.currency('1', {currency:'USD', zero_part:"ровно"}))
 => "один доллар ровно"
 
-console.log(chislogon.currency('2156,22', {unit:{base:["m","фертинг","фертинга","фертингов"], part:["m","сантик","сантика","сантиков"]}}))
+console.log(chislogon.currency('2156,22', {unit:{
+                                                base:["m","фертинг","фертинга","фертингов"],
+                                                part:["m","сантик","сантика","сантиков"]
+                                                }}))
 => "две тысячи сто пятьдесят шесть фертингов двадцать два сантика" (из "Незнайка на луне":-))
 
 ```
