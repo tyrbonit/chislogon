@@ -83,3 +83,18 @@ console.log(chislogon.decimal('236,0', {zero_base:false, zero_part:"ровно"}
 ```
 
 ### Для случая с денежными суммами вызвать функцию currency у объекта chislogon
+```
+console.log(chislogon.currency('2562,01'))
+=> "две тысячи пятьсот шестьдесят два рубля одна копейка"
+
+console.log(chislogon.currency('1256.23', {off_part: true}))
+=> "одна тысяча двести пятьдесят шесть рублей 23 копейки"
+
+console.log(chislogon.currency('5665485.23', {off_base: true, off_part: true}))
+=> "5665485 рублей 23 копейки"
+
+console.log(chislogon.currency('2000252000.998', {currency: "CNY"}))
+=> "два миллиарда двести пятьдесят две тысячи один юань"
+
+
+```
